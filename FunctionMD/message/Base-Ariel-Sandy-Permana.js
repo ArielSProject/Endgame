@@ -2211,7 +2211,7 @@ if (q.includes('--help')) return reply(examquery)
  	           const arielkece = `Hii Kak *${m.pushName}* ${m.sayingtime + m.timoji}
 
 Silahkan Klick Button Dibawah Untuk Melihat Beberapa Fitur Yang Tersedia`
-                let sections = [ { title: `${m.pushName} ${m.sayingtime + m.timoji}`, rows: [ { title: "🐬 All Menu", rowId: "#menu2", description: `Menampilkan Semua Menu *${Options.info.botName}*`},{title: "🐬 Group Menu", rowId: ".groupmenu", description: "Menampilkan Menu Group"},{title: "🐬 Download Menu", rowId: "#downloadmenu", description: "Menampilkan Menu Download"},{title: "🐬 Random Video", rowId: "#videomenu", description: `Random Video By ${Options.info.ownerName}`},{title: "🐬 Convert Menu", rowId: "#convertmenu", description: "Menampilkan Menu Convert"},{title: "🐬 RPG Menu", rowId: "#rpgmenu", description: "Menampilkan Menu RPG ⚔️"},{title: "🐬 Textpro Menu", rowId: "#textpromenu", description: "Menampilkan Menu Textpro"},{title: "🐬 Info Menu", rowId: "#infomenu", description: "Menampilkan Menu Informasi"},{title: "🐬 Google Menu", rowId: "#googlemenu", description: "Menampilkan Menu Google"},{title: "🐬 Fun Menu", rowId: "#funmenu", description: "Menampilkan Menu Fun & Enjoy"},{title: "🐬 Random Menu", rowId: "#randommenu", description: "Menampilkan Menu Random"},{title: "🐬 Sound Menu", rowId: "#soundmenu", description: "Menampilkan Menu Musik"},{title: "🐬 Kisah Menu", rowId: "#kisahmenu", description: "Menampilkan Menu Kisah Nabi"},{title: "🐬 Anime Menu", rowId: "#imagemenu", description: "Menu Untuk Para Wibu"},{title: "🐬 Tools Menu", rowId: "#toolsmenu", description: "Menampilkan Menu Tools"},{title: "🐬 MTK Menu", rowId: "#mtkmenu", description: "Menampilkan Menu MTK"},{title: "🐬 Game Menu", rowId: "#gamemenu", description: "Menampilkan Menu Game"},{title: "🐬 WA Imun Menu", rowId: "#wamenu", description: "WhatsApp Anti Virtex"}, ]}    ]
+                let sections = [ { title: `${m.pushName} ${m.sayingtime + m.timoji}`, rows: [ { title: "🐬 All Menu", rowId: "#menu2", description: `Menampilkan Semua Menu *${Options.info.botName}*`},{title: "🐬 Group Menu", rowId: ".groupmenu", description: "Menampilkan Menu Group"},{title: "🐬 Download Menu", rowId: "#downloadmenu", description: "Menampilkan Menu Download"},{title: "🐬 Random Video", rowId: "#videomenu", description: `Random Video By ${Options.info.ownerName}`},{title: "🐬 Convert Menu", rowId: "#convertmenu", description: "Menampilkan Menu Convert"},{title: "🐬 RPG Menu", rowId: "#rpgmenu", description: "Menampilkan Menu RPG ⚔️"},{title: "🐬 Textpro Menu", rowId: "#textpromenu", description: "Menampilkan Menu Textpro"},{title: "🐬 Info Menu", rowId: "#infomenu", description: "Menampilkan Menu Informasi"},{title: "🐬 Google Menu", rowId: "#googlemenu", description: "Menampilkan Menu Google"},{title: "🐬 Fun Menu", rowId: "#funmenu", description: "Menampilkan Menu Fun & Enjoy"},{title: "🐬 Random Menu", rowId: "#randommenu", description: "Menampilkan Menu Random"},{title: "🐬 Sound Menu", rowId: "#soundmenu", description: "Menampilkan Menu Musik"},{title: "🐬 Kisah Menu", rowId: "#kisahmenu", description: "Menampilkan Menu Kisah Nabi"},{title: "🐬 Anime Menu", rowId: "#imagemenu", description: "Menu Untuk Para Wibu"},{title: "🐬 Tools Menu", rowId: "#toolsmenu", description: "Menampilkan Menu Tools"},{title: "🐬 MTK Menu", rowId: "#mtkmenu", description: "Menampilkan Menu MTK"},{title: "🐬 Game Menu", rowId: "#gamemenu", description: "Menampilkan Menu Game"},{title: "🐬 WA Imun Menu", rowId: "#wamenu", description: "WhatsApp Anti Virtex"},{title: "🐬 Beli Script Bot", rowId: "#scariel", description: "50K & 30K"}, ]}    ]
                 let listMessage = {footer: `${Options.info.botName}`,text: arielkece, buttonText: "Klick Ini Kak",sections}
                 let sendm =  sock.sendMessage( from, listMessage, {quoted :m })
                 }
@@ -2225,6 +2225,20 @@ Silahkan Klick Button Dibawah Untuk Melihat Beberapa Fitur Yang Tersedia`
                 }
             }
             break
+  case 'scariel':{
+ {
+                let sections = [ { title: `${m.pushName} ${m.sayingtime + m.timoji}`, rows: [ { title: "💰 50K No Enc", rowId: "#ariel50K", description: "Full Fitur No Enc On 24 Jam"},{title: "💰 30K No Enc", rowId: "#ariel30K", description: "45 Fitur Di Hapus & No Enc On 24 Jam"}, ]}    ]
+                let listMessage = {footer: `${Options.info.botName}`,text: `Beli Script Bot Ke Owner wa.me/12087630151`, buttonText: "List Harga",sections}
+                let sendm =  sock.sendMessage( from, listMessage, {quoted :m })
+                }
+            }
+            break
+  case 'ariel50k':
+  reply('Full Fitur No Enc On 24 Jam Chat Owner wa.me/12087630151 Harga 50K\n\n• Payment\nGopay\nDana\nOvo\nPulsa')
+  break
+  case 'ariel30k':
+  reply('45 Fitur Di Hapus & No Enc On 24 Jam Chat Owner wa.me/12087630151 Harga 30K\n\n• Payment\nGopay\nDana\nOvo\nPulsa')
+  break
   case 'asumenu':{
  {
                 let sections = [ { title: `${m.pushName} ${m.sayingtime + m.timoji}`, rows: [ { title: "🎥 Asupan Geayoubi", rowId: "#asupan geayubi", description: "Random Video Geayoubi"},{title: "🎥 Asupan Bocil", rowId: "#asupan bocil", description: "Random Video Bocil Sexy"},{title: "🎥 Asupan Rikagusriani", rowId: "#asupan rikagusriani", description: "Random Video Rikagusriani"}, ]}    ]
